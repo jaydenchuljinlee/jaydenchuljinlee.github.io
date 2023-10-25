@@ -1,0 +1,136 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Cheoljin Lee
+    tagline: Back-End Developer
+    avatar: profile.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: ironjin92@gmail.com
+    phone: 010-8966-9169
+    timezone:
+    citizenship:
+    website: iron-jin.tistory.com
+    linkedin: alandoe
+    xing:
+    github: github.com/jaydenchuljinlee
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter:
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+    pdf: /profile.jpeg
+
+    interests:
+      title: Interests
+      info:
+        - item: With Cat ':cat:'
+          link:
+
+        - item: helth ':runner:'
+          link:
+
+        - item: Ball Games ':basketball:'
+          link:
+
+career-profile:
+    title: Career Profile
+    summary: |
+      Software Engineer and Back-End Developer with over 3 years of experience developing in Republic of Korea.
+      I have experience based on Spring project with MSA and establish STO services through blockchain network.
+      There's a lot of interest in clean code and architecture, and I'd like to write source code from a new perspective. :blush:
+education:
+    title: Education
+    info:
+      - degree: Management Information Systems
+        university: University of Kyonggi
+        time: 2013 - 2018
+        details: |
+          Describe your study here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          pretium quis, sem.
+            - Bullet point
+            - Bullet point
+
+experiences:
+    title: Experiences
+    info:
+      - role: Back-end Developer
+        time: 2021 - Present
+        company: Bbick
+        details: |
+          we successfully built and launched STO projects by Using the MSA architecture-based Spring framework.
+          and I contributed to solve JPA query issues and to reducing Spring Build time.
+            - Framework:
+              - Spring boot
+            - Language:
+              - Kotlin / Java
+            - Depndencies:
+              - Spring Cloud / Spring Data JPA / Spring Data redis / WebSocket
+            - Database:
+              - MySQL, Redis
+            - Infra:
+              - AWS Public Network
+            - Architecture:
+              - Micro Service Architecture
+      - role: Back-end & Fron-end Developer
+        time: 2020 - 2021
+        company: WatchTeck
+        details: |
+          I was in charge of front-end and back-end development in the Companies operating autonomous management system services.
+          and I'd contributed a lot to project planning in project development team
+            - Framework:
+              - Spring Framework / Vue-cli
+            - Language:
+              - Java / Vue
+            - Depndencies:
+              - Spring Data JDBC
+            - Database:
+              - MySQL
+            - Infra:
+              - Private Network
+            - Architecture:
+              - Monolitic Service Architecture
+
+certifications:
+      title: Certifications
+      list:
+        - name: Engineer Information Processing
+          start: 2020
+          end: 
+          organization: Human Resources Development Service of Korea
+          credentialid: 
+          credentialurl: 
+          credentialname: 
+          details: 
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Java & Spring
+        level: 98%
+
+      - name: Javascript & Vue
+        level: 70%
+
+      - name: HTML5 & CSS
+        level: 50%
+
+      - name: MySQL & Redis
+        level: 80%
+
+      - name: Docker & Kubernetes
+        level: 70%
+
