@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41fc6447-01b4-4507-9763-901c0d0499d6" name="Changes" comment="Update Issue" />
+    <list default="true" id="41fc6447-01b4-4507-9763-901c0d0499d6" name="Changes" comment="Update Resume" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +49,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698277847119</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update Resume">
+      <created>1698472177400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698472177400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Resume" />
     <MESSAGE value="Update Issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Issue" />
+    <MESSAGE value="Update Resume" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Resume" />
   </component>
 </project>
