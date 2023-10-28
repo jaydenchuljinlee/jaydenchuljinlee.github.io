@@ -10,7 +10,7 @@ sidebar:
     # Profile information
     name: Cheoljin Lee
     tagline: Back-End Developer
-    avatar: profile.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: ironjin92@gmail.com
@@ -28,7 +28,7 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: /profile.jpeg
+    pdf: 20231028_resume.pdf
 
     interests:
       title: Interests
