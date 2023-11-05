@@ -18,7 +18,7 @@ sidebar:
     timezone:
     citizenship:
     website: iron-jin.tistory.com
-    linkedin: alandoe
+    # linkedin: alandoe
     xing:
     github: github.com/jaydenchuljinlee
     telegram: # add your nickname without '@' sign
@@ -28,17 +28,18 @@ sidebar:
     stack-overflow: # Number/Username, e.g. 123456/alandoe
     codewars:
     goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: 20231028_resume.pdf
+    # pdf: 20231028_resume.pdf
 
 career-profile:
     motivation: 끊임 없이 궁금해하며 원인을 찾는 개발자
-    title: 소개
+    title: 소개 (3년 4개월)
     summary: |
-      &nbsp; <b>4년 차 백엔드 개발자</b>로 <b>스프링</b>을 통해 <b>MA 서비스부터 MSA 서비스</b>까지 다양한 서버 구축 경험을 토대로 국내 최초 STO 플랫폼 런칭을 성공적으로 완료했습니다.
+      &nbsp; <b>백엔드 개발자</b>로 <b>스프링</b>을 통해 <b>MA 서비스부터 MSA 서비스</b>까지 다양한 서버 구축 경험을 토대로 <b>부동산 자산 거래 STO 플랫폼 서비스</b>를 성공적으로 개발했습니다.
       
-      &nbsp; 평소 아키텍처 및 클린 코드에 관심이 많고, 탐구한 정보를 프로젝트에 녹여내어 <b>JPA 질의 시간 3초 감소, 빌드 시간 30초 감소</b> 등의 성과를 이루어 냄을 통해 정보의 지식화를 잘 해낼 수 있는 업무상의 장점을 가지고 있습니다.
+      &nbsp; 평소 <b>아키텍처 및 클린 코드</b>에 관심이 많고, 비브릭 서비스 메인 화면 조회 시 <b>JPA 연관 관계 이슈</b>로 정보 질의가 늦어져 사용자 불편이 야기되었던 <b>질의 시간을 3초 감소</b>했고,
+      빌드 시 <b>Spring Test에서 Context 이슈</b>로 인해 느려졌던 <b>빌드 시간을 30초 감소</b>하는 등의 성과가 있습니다.
       
-      &nbsp; 사용자 친화적인 서비스를 구축하기 위해서는 다양한 구성원들과의 의사소통이 중요하다는 인식을 가지고 있고, 협업 개발을 위해 <b>UX 적인 소통</b>에도 많은 기여를 했습니다.
+      &nbsp; 사용자 친화적인 서비스를 구축하기 위해서는 다양한 구성원들과의 의사소통이 중요하다는 인식을 가지고 있고, 협업 개발을 위해 <b>UX 소통</b>에도 기여를 했습니다.
 education:
     title: 교육
     info:
@@ -60,12 +61,13 @@ experiences:
       - name: 비브릭
         duration: 2021.10 - 현재
         info:
-          - role: Hyper-Report 대시보드 서버  개발및 인프라 구축
+          - role: 대시보드 서버 개발및 인프라 구축
             time: 2023.08 - 2023.10
             company:
             details: |
-              &nbsp; Hyper Rounge의 Hyper Report Web 대시보드 서비스 구현을 목적으로,  API 서버 개발 및 AWS 를 통한 Infra Structrue 구축
+              &nbsp; Web 대시보드 서비스 구현을 목적으로,  API 서버 개발 및 AWS 를 통한 Infra Structrue 구축
                 - Vue.js로 채팅 서비스 UI를 구축하면서 채널 / 메시지의 다양한 이벤트들에 대한 중복 코드에 대한 이슈를 <b>템플릿 메서드 패턴과 콜백 패턴</b>을 결합하여 채팅 이벤트에 대한 재사용성을 높이는데 기여
+                - <b>차트 데이터 분석</b>을 위해 <b>대용량의 데이터와 유연한 스키마 처리</b>가 가능하면서도 <b>JSON 형식의 파일 형태</b>로 저장이 가능한 document DB인 <b>AWS의 DynamoDB</b>를 채택하여 개발
                 - API 서버 개발 및 AWS를 통한 Public Cloud 네트워크 구축
                 - 사용 스택
                   - Spring Boot 2.7 + kotlin 1.6 / JPA / QueryDSL
@@ -77,6 +79,8 @@ experiences:
             company: 비브릭
             details: |
               &nbsp; 블록체인 서비스 내재화를 위해 Web3j와 Solidity를 사용하여 Hyperledger Besu 서버와 연동하는 프로세스 구축
+                - 비즈니스 서비스 로직 요청과 블록체인 트랜잭션이 등록되기까지 1초 남짓 <b>시간적 괴리 이슈</b>가 있었고, 이를 <b>반복 횟수 패턴</b>을 통해 응답을 받을 수 있도록 했으며,
+                  실패 혹은 반복 횟수를 넘어서는 요청에 대해서는 <b>실패 로그</b>를 남기고 전체 <b>트랜잭션 전파 범위를 롤백</b>할 수 있도록하는 방향으로 이슈 처리
                 - 컴파일 상에서는 발생하지 않고 배포 시에 <b>Transaction Fail이 일어나는  Struct 타입에 대한 UseCase 작성</b>을 통해 팀원들의 개발 시간을 단축하고 프로젝트 조기 완료에 기여
                 - <b>Proxy Contract</b> 설계를 통해 변경이 불가능한 블록체인 구조를 유연하게 사용이 가능하도록 구현하여 확장성 있는 블록체인 구조 구축
                 - 사용 스택
@@ -99,77 +103,37 @@ experiences:
                   - Rest Docs / Swagger
                   - AWS EC2, RDS, SQS
                   - Jenkins(CI/CD)
-          - role: STO 서비스 거래 처리 서버 개발
-            time: 2022.01 - 2022.04
+          - role: STO 서비스 알림 & 거래 처리 서버 개발
+            time: 2021.10 - 2021.04
             company: 비브릭
             details: |
-              &nbsp; 청약 / 거래 요청이 들어왔을 때, API 서버와 블록체인 서버 사이에서 순서 보장 및 정합성을 맞추기 위한 중개 서버 개발
-                - 거래 처리 서버 특성상 여러 엔티티 관계가 조인되어 있고, 이에 따라 질의 시간이 오래 걸리는 문제를 <b>쿼리 개선</b>과 JPA 문법 개선을 통하여 <b>3초 이상 감소</b>
+              &nbsp; 회원 메시지 전송 및 청약 / 거래 관련 프로세스 처리 서버 개발
+                - 푸시 알람 발송을 위해 firebase admin SDK를 사용하여 메시지를 보내는 도중 드문 경우로 <b>메시지가 유실</b>되는 이슈가 있었고, 중간에 <b>Queue 서버</b>를 두어 중간에 서버에서 메시지 처리 도중 에러로 인하여
+                  메시지가 유실되더라도 후처리가 가능하게끔 <b>로그로 기록</b>하여 메시지 유실에 대한 이슈를 해결
+                - 청약 / 거래에 사용되는 펀드 관련 테이블들의 JPA 연관 관계에서 올바르지 못한 사용으로 인해 <b>N+1 이슈</b>가 발생하여 메인 화면 조회 속도 저하 이슈가 발생했었고,
+                  해당 펀드 관련 테이블에 대한 <b>연관관계 재설계 및 QueryDSL</b>을 통해 해당 이슈를 해결
                 - 사용 스택
                   - Spring Boot 2.7 + kotlin 1.6 / JPA / QueryDSL
                   - MySql / Redis
-                  - WebSocket
-                  - AWS EC2, RDS, SQS
-                  - Jenkins(CI/CD)
-          - role: STO 서비스 알림 서버 개발
-            time: 2021.10 - 2021.12
-            company: 비브릭
-            details: |
-              &nbsp; 회원 가입 및 입출금 등의 로직에 공통으로 사용될 알림 서버 개발
-                - 푸시 알람 발송을 위해 firebase admin SDK를 사용
-                - 알람 메시지의 유실 및 지연을 막기 위한 Message Queue로 AWS SQS를 사용
-                - 사용 스택
-                  - Spring Boot 2.7 + kotlin 1.6 / JPA / QueryDSL
-                  - AWS EC2, RDS, SQS / FCM
+                  - AWS EC2, RDS, SNS, SQS / FCM
                   - Jenkins(CI/CD)
       - name: 와치텍
         duration: 2020.07 - 2021.10
         info:
-          - role: 퍼블릭 클라우드 모니터링
-            time: 2021.06 - 2021.09
+          - role: API 서버 개발 및 기획
+            time:
             company: 와치텍
             details: |
-              &nbsp; 클라우드 성능 지표 관련  API 설계 및 연동 개발. 연동 API를 통한 대시보드 차트 위젯 개발
-                - Spring Framework를 통한 AWS CloudWatch 및 Naver CloudInsight 관련 성능 지표 API 연동 로직 구현
-                - Spring Boot Junit 테스트와 RestTemplate을 통해 API 연동 테스트 진행
-                - highchart.js 라이브러리를 사용하여 대시보드 차트 위젯 개발
-                - vue.js를 통한 SPA 화면 개발
-                - 퍼블릭 클라우드 관련 document 조사 및 화면 설계서 작성
-                - Java, Spring Boot, Mybatis, Vue.js, MySQL, AWS, NAVER Cloud Flatform
-          - role: 쿠버네티스 모니터링
-            time: 2021.03 -2021.06
-            company: 와치텍
-            details: |
-              &nbsp; 쿠버네티스 성능 및 구성 정보 모니터링을 제공해주기 위해 Openshift 기반의 환경에서 개발 된 클러스터 모델 정보를 가시화하는 프로젝트 진행
-                - vue.js를 통한 SPA 화면 개발
-                - 모니터링중인 Cluster / Node / Pod / Container에 대한 DB 데이터 정보 조회
-                - 쿠버네티스 관련 document 조사 및 화면설계서 작성
-                - Java, Spring, Mybatis, MySQL, Vue.js
-          - role: 무선 AP 모니터링
-            time: 2020.12 -2021.01
-            company: 와치텍
-            details: |
-              &nbsp; 수주받은 제조사에서 사용하는 AP 기기들에 대한 성능 및 구성 모니터링 제공. IT 자산 관리 서비스에 대한 추가 개발 개발
-                - 무선 AP 기기에서 제공하는 API 명세를 통해 API 명세 구현
-                - 스케쥴링 기능을 통해  IT 자산 만료일 및 유지 보수 기간 설정 알림 기능 구현
-                - Vue.js를 통해 SPA 화면 개발
-                - Java, Spring, Mybatis, MySQL, Vue.js
-          - role: 운영 관리 고도화
-            time: 2020.12 -2021.01
-            company: 와치텍
-            details: |
-              &nbsp; 사내 프로그램 개선을 위해 권한 관리 및 차트 개선 관련 운영 고도화 프로젝트를 진행
-                - 스프링 시큐리티 권한 관리 소스 코드 점검 및 추가 쿼리 개발
-                - ELK를 통해 차트 데이터 조회 관련 쿼리 점검
-                - Java, Spring, Mybatis, MySQL, Vue.js
-          - role: 영문화 프로젝트
-            time: 2020.09 -2020.11
-            company: 와치텍
-            details: |
-              &nbsp; 프로그램에 대한 영문 번역본을 제공해주기위한 프로젝트를 진행
-                - 클라이언트 / 서버 사이드에서 제공 가능한 한글 및 영단어 프로퍼티 파일 생성
-                - 단순한 주어 / 동사 / 목적어 관계에 대한 메시지 생성 메서드 구현
-                - Java, Spring, Mybatis, MySQL, Vue.js
+                - Public Cloud Metric 지표를 통해 성능 조회 API 개발
+                - Kubernetes 성능 조회 API 개발
+                - vue.js를 통해 대시보드 차트 위젯 개발
+                - 고객사에 필요한 성능 정보를 어떻게 보여줄지에 대한 개발 기획 및 화면 설계서 작성
+                - 사용 스택
+                  - Java, Spring, Mybatis
+                  - Vue.js
+                  - MySQL
+                  - AWS, NAVER Cloud Flatform, KT Cloud
+
 
 
 
@@ -193,7 +157,7 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Java & Spring
+      - name: Java & kotlin & Spring
         level: 98%
 
       - name: Javascript & Vue

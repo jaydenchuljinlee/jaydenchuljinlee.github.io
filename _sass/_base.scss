@@ -181,6 +181,12 @@ p {
   .educations-section {
     .item {
       margin-bottom: 30px;
+
+      .details {
+        ul > li {
+          margin-bottom: 7px;
+        }
+      }
     }
   }
   .upper-row,
