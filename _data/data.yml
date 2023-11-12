@@ -65,7 +65,7 @@ experiences:
             time: 2023.08 - 2023.10
             company:
             details: |
-              &nbsp; Web 대시보드 서비스 구현을 목적으로,  API 서버 개발 및 AWS 를 통한 Infra Structrue 구축
+              &nbsp; <i><b>Web 대시보드 서비스 구현을 목적으로,  API 서버 개발 및 AWS 를 통한 Infra Structrue 구축</i></b>
                 - Vue.js로 채팅 서비스 UI를 구축하면서 채널 / 메시지의 다양한 이벤트들에 대한 중복 코드에 대한 이슈를 <b>템플릿 메서드 패턴과 콜백 패턴</b>을 결합하여 채팅 이벤트에 대한 재사용성을 높이는데 기여
                 - <b>차트 데이터 분석</b>을 위해 <b>대용량의 데이터와 유연한 스키마 처리</b>가 가능하면서도 <b>JSON 형식의 파일 형태</b>로 저장이 가능한 document DB인 <b>AWS의 DynamoDB</b>를 채택하여 개발
                 - API 서버 개발 및 AWS를 통한 Public Cloud 네트워크 구축
