@@ -31,12 +31,12 @@ sidebar:
     # pdf: 20231028_resume.pdf
 
 career-profile:
-    motivation: 끊임 없이 궁금해하며 원인을 찾는 개발자
+    motivation: 소비자에게 더 좋은 경험을 주기 위해 공부한다
     title: 소개 (3년 4개월)
     summary: |
-      &nbsp; <b>백엔드 개발자</b>로 <b>스프링</b>을 통해 <b>MA 서비스부터 MSA 서비스</b>까지 다양한 서버 구축 경험을 토대로 <b>부동산 자산 거래 STO 플랫폼 서비스</b>를 성공적으로 개발했습니다.
+      &nbsp; <b>MAU 400명, 총 이용 고객 9000</b>명 서비스의 초창기 Backend 개발자로 참여했습니다. 비록 이용자 수는 적었지만, 개발자로서 고객에게 더 좋은 서비스를 제공하기 위해 <b>성능 개선</b>에 대한 많은 고민을 하고 있으며, 느리지만 꾸준하게 이어나가는 개발 열정을 가지고 있습니다.
       
-      &nbsp; 평소 <b>아키텍처 및 클린 코드</b>에 관심이 많고, 비브릭 서비스 메인 화면 조회 시 <b>JPA 연관 관계 이슈</b>로 정보 질의가 늦어져 사용자 불편이 야기되었던 <b>질의 시간을 3초 감소</b>했고,
+      &nbsp; 평소 <b>아키텍처 및 클린 코드</b>에 관심이 많고, 서비스 메인 화면 조회 시 <b>JPA 연관 관계 이슈</b>로 정보 질의가 늦어져 사용자 불편이 야기되었던 <b>질의 시간을 3초 감소</b>했고,
       빌드 시 <b>Spring Test에서 Context 이슈</b>로 인해 느려졌던 <b>빌드 시간을 30초 감소</b>하는 등의 성과가 있습니다.
       
       &nbsp; 사용자 친화적인 서비스를 구축하기 위해서는 다양한 구성원들과의 의사소통이 중요하다는 인식을 가지고 있고, 협업 개발을 위해 <b>UX 소통</b>에도 기여를 했습니다.
@@ -74,49 +74,34 @@ experiences:
                   - Rest Docs / Swagger
                   - AWS EC2, RDS, VPC
                   - Jenkins(CI/CD)
-          - role: STO 서비스 블록체인 서버 개발
-            time: 2023.01 - 2023.06
+          - role: 블록체인 부동산 조각 투자 플랫폼 비브릭
+            time: 2021.10 - 2023.06
             company: 비브릭
             details: |
-              &nbsp; 블록체인 서비스 내재화를 위해 Web3j와 Solidity를 사용하여 Hyperledger Besu 서버와 연동하는 프로세스 구축
+              &nbsp; <i><b>회원 메시지 전송 및 청약 / 거래 관련 프로세스 처리 서버 개발</b></i>
+                - 푸시 알람 발송을 위해 firebase admin SDK를 사용하여 메시지를 보내는 도중 드문 경우로 <b>메시지가 유실</b>되는 이슈가 있었고, 중간에 <b>Queue 서버</b>를 두어 중간에 서버에서 메시지 처리 도중 에러로 인하여
+                  메시지가 유실되더라도 후처리가 가능하게끔 <b>로그로 기록</b>하여 메시지 유실에 대한 이슈를 해결
+                - 청약 / 거래에 사용되는 펀드 관련 테이블들의 JPA 연관 관계에서 올바르지 못한 사용으로 인해 <b>N+1 이슈</b>가 발생하여 메인 화면 조회 <b>속도 저하 이슈</b>가 발생했었고,
+                  해당 펀드 관련 테이블에 대한 <b>연관관계 재설계 및 QueryDSL</b>을 통해 해당 이슈를 해결
+              
+              &nbsp; <i><b>서비스 안정화를 위한 리팩토링과 문서화</b></i>
+                - 각 서비스에서 처리하던 로깅 기록을 Spring Cloud MSA Document 학습을 통해  Gateway에서 제공하는 Custom Filter를 구현하여 <b>중복 코드 제거</b>
+                - RestDocs + Swagger UI를 통해 MSA 환경에서 API 명세를 한 곳에서 관리할 수 있는 <b>자동화 문서관리 프로세스</b>를 구축
+                - JPA Entity 및 테이블 재설계를 통해 <b>불필요한 코드를 제거</b>
+
+              &nbsp; <i><b>Web3j와 Solidity를 활용한 Smart Contract 서버 개발</b></i>
                 - 비즈니스 서비스 로직 요청과 블록체인 트랜잭션이 등록되기까지 1초 남짓 <b>시간적 괴리 이슈</b>가 있었고, 이를 <b>반복 횟수 패턴</b>을 통해 응답을 받을 수 있도록 했으며,
                   실패 혹은 반복 횟수를 넘어서는 요청에 대해서는 <b>실패 로그</b>를 남기고 전체 <b>트랜잭션 전파 범위를 롤백</b>할 수 있도록하는 방향으로 이슈 처리
                 - 컴파일 상에서는 발생하지 않고 배포 시에 <b>Transaction Fail이 일어나는  Struct 타입에 대한 UseCase 작성</b>을 통해 팀원들의 개발 시간을 단축하고 프로젝트 조기 완료에 기여
                 - <b>Proxy Contract</b> 설계를 통해 변경이 불가능한 블록체인 구조를 유연하게 사용이 가능하도록 구현하여 확장성 있는 블록체인 구조 구축
-                - 사용 스택
-                  - Spring Boot 2.7 + kotlin 1.6 / JPA / QueryDSL
-                  - Solidity / Web3j / Hyperledger BESU
-                  - Rest Docs / Swagger
-                  - AWS EC2, RDS, SQS
-                  - Jenkins(CI/CD)
-          - role: STO 서비스 백엔드 리팩토링
-            time: 2022.07 - 2022.12
-            company: 비브릭
-            details: |
-              &nbsp; 서비스 안정화를 위해 필요한 부가 서비스 개발
-                - 각 서비스에서 처리하던 로깅 기록을 Spring Cloud MSA Document 학습을 통해  Gateway에서 제공하는 Custom Filter를 구현하여 <b>중복 코드 제거</b>
-                - RestDocs + Swagger UI를 통해 MSA 환경에서 API 명세를 한 곳에서 관리할 수 있는 <b>자동화 문서관리 프로세스</b>를 구축
-                - JPA Entity 및 테이블 재설계를 통해 <b>불필요한 코드를 제거</b>
-                - 사용 스택
-                  - Spring Boot 2.7 + kotlin 1.6 / JPA / QueryDSL
-                  - MySql / Redis
-                  - Rest Docs / Swagger
-                  - AWS EC2, RDS, SQS
-                  - Jenkins(CI/CD)
-          - role: STO 서비스 알림 & 거래 처리 서버 개발
-            time: 2021.10 - 2021.04
-            company: 비브릭
-            details: |
-              &nbsp; 회원 메시지 전송 및 청약 / 거래 관련 프로세스 처리 서버 개발
-                - 푸시 알람 발송을 위해 firebase admin SDK를 사용하여 메시지를 보내는 도중 드문 경우로 <b>메시지가 유실</b>되는 이슈가 있었고, 중간에 <b>Queue 서버</b>를 두어 중간에 서버에서 메시지 처리 도중 에러로 인하여
-                  메시지가 유실되더라도 후처리가 가능하게끔 <b>로그로 기록</b>하여 메시지 유실에 대한 이슈를 해결
-                - 청약 / 거래에 사용되는 펀드 관련 테이블들의 JPA 연관 관계에서 올바르지 못한 사용으로 인해 <b>N+1 이슈</b>가 발생하여 메인 화면 조회 속도 저하 이슈가 발생했었고,
-                  해당 펀드 관련 테이블에 대한 <b>연관관계 재설계 및 QueryDSL</b>을 통해 해당 이슈를 해결
-                - 사용 스택
-                  - Spring Boot 2.7 + kotlin 1.6 / JPA / QueryDSL
-                  - MySql / Redis
-                  - AWS EC2, RDS, SNS, SQS / FCM
-                  - Jenkins(CI/CD)
+
+              &nbsp; 사용 스택
+                - Spring Boot 2.7 + kotlin 1.6 / JPA / QueryDSL
+                - Solidity / Web3j / Hyperledger BESU
+                - MySql / Redis
+                - Rest Docs / Swagger
+                - AWS EC2, RDS, SQS
+                - Jenkins(CI/CD)
       - name: 와치텍
         duration: 2020.07 - 2021.10
         info:
