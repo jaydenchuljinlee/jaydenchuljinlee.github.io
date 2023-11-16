@@ -7,12 +7,17 @@
       <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
     </span>
     {{ experiences.title }}
-  </h2>
 
+    {% if experiences.title == '경력 사항' %}
+    => <a href="http://{{ career-profile.tublesuitting }}" target="_blank" style="color: #4B6A78"> 이슈 정리</a>
+    {% endif %}
+  </h2>
+  
   {% for experience in experiences.company %}
   <h2 class="section-title" style="border-bottom: 1px solid black; padding-bottom: 6px;">
     <b><i>{{ experience.name }}({{ experience.duration }})</i></b>
   </h2>
+  
   {% for info in experience.info %}
   <div class="item">
     <div class="meta">
