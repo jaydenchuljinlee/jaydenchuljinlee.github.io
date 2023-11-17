@@ -57,6 +57,9 @@ education:
 
 experiences:
     title: 경력 사항
+    tublesuitting: 
+      title: 이슈 정리 매모
+      url: shard-othnielia-ba2.notion.site/9e3016cd213c4e3b81f09b4618acf80c
     company:
       - name: 비브릭
         duration: 2021.10 - 현재
@@ -156,7 +159,3 @@ skills:
 
       - name: Docker & Kubernetes
         level: 70%
-
-tublesuitting: 
-    title: 이슈 정리 매모
-    url: shard-othnielia-ba2.notion.site/9e3016cd213c4e3b81f09b4618acf80c
