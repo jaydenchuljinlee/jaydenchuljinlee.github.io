@@ -57,7 +57,7 @@ education:
 
 experiences:
     title: 경력 사항
-    tublesuitting: 
+    tublesuitting:
       title: 이슈 정리 매모
       url: shard-othnielia-ba2.notion.site/9e3016cd213c4e3b81f09b4618acf80c
     company:
@@ -82,20 +82,20 @@ experiences:
             company: 비브릭
             details: |
               &nbsp; <i><b>회원 메시지 전송 및 청약 / 거래 관련 프로세스 처리 서버 개발</b></i>
-                - 푸시 알람 발송을 위해 firebase admin SDK를 사용하여 메시지를 보내는 도중 드문 경우로 <b>메시지가 유실</b>되는 이슈가 있었고, 중간에 <b>Queue 서버</b>를 두어 중간에 서버에서 메시지 처리 도중 에러로 인하여
-                  메시지가 유실되더라도 후처리가 가능하게끔 <b>로그로 기록</b>하여 메시지 유실에 대한 이슈를 해결
-                - 청약 / 거래에 사용되는 펀드 관련 테이블들의 JPA 연관 관계에서 올바르지 못한 사용으로 인해 <b>N+1 이슈</b>가 발생하여 메인 화면 조회 <b>속도 저하 이슈</b>가 발생했었고, <b>JPA 라이브러리 레벨에서의 디버깅</b>을 통해 엔티티 프로퍼티가 조회될 때, 연관관계의 프로퍼티가 같이 조회되는 부분을 발견했고,
+                - 푸시 알람 발송을 위해 firebase admin SDK를 사용하여 메시지를 보내는 도중 드문 경우로 <a href="https://shard-othnielia-ba2.notion.site/d179ac218b2e432794c9874f523bb295" target="_blank" style="color: #3232ea"><b>메시지가 유실되는 이슈</b></a>가 있었고, 중간에 <b>Queue 서버</b>를 두어 중간에 서버에서 메시지 처리 도중 에러로 인하여
+                  메시지가 유실되더라도 후처리가 가능하게끔 <b>로그로 기록하여 메시지 유실에 대한 이슈 해결</b>
+                - 청약 / 거래에 사용되는 펀드 관련 테이블들의 JPA 연관 관계에서 올바르지 못한 사용으로 인해 <a href="https://shard-othnielia-ba2.notion.site/JPA-N-1-76584d21a2874095b61957a944d3d272" target="_blank" style="color: #3232ea"><b>N+1 쿼리 발생으로 인한가 메인 화면 조회 속도 저하 이슈</b></a>가 발생했었고, <b>JPA 라이브러리 레벨에서의 디버깅</b>을 통해 엔티티 프로퍼티가 조회될 때, 연관관계의 프로퍼티가 같이 조회되는 부분을 발견했고,
                   해당 펀드 관련 테이블에 대한 <b>연관관계 재설계 및 QueryDSL</b>을 통해 해당 이슈를 해결했고 결과적으로 <b>메인 화면의 조회 시간을 3초 감소</b>
               
               &nbsp; <i><b>서비스 안정화를 위한 리팩토링과 문서화</b></i>
-                - <b>MSA 환경에서 API 요청 기록</b>을 각각의 서버에서 남기는 <b>boiler plate 코드</b>가 많은 이슈가 있었고, 해당 기록을 담당하는 Filter에서 RequestBody를 읽기 위해 특정 클래스를 구현하게 되면 불필요한 코드가 보여 가시성이 떨어지는 이슈가 있었고, 이를 하나의 GateWay에서 제공하는 <b>ModifyRequestBodyGatewayFilterFactory</b>를 통해 간단하게 구현했고, <b>로깅에 대한 의존성</b>을 떨어뜨리기 위해 <b>Queue 서버</b>를 중간에 두어 <b>확실한 도메인 경계</b>를 나누는데 기여
-                - RestDocs + Swagger UI를 통해 MSA 환경에서 API 명세를 한 곳에서 관리할 수 있는 <b>자동화 문서관리 프로세스</b>를 구축하여 구성원 간의 효과적인 소통에 기여
-                - Spring Test가 진행되면서 Context를 반복해서 띄우게 됨으로 <b>빌드 시간이 오래 걸리는 이슈</b>가 있었고, 원인이었던 <b>@WebMvcTest를 하나의 추상 클래스</b>로 만들어 확장하게 했고, 무분별한 @MockBean / @SpyBean 사용으로 인해 빈 재생성이 생기는 문제를 <b>테스트 관심사 분리</b>를 통해 @Bean을 사용하는 테스트 클래스를 최소화하여 <b>전체 빌드 시간을 30초 감소</b>하는데 기여
+                - <a href="https://shard-othnielia-ba2.notion.site/MSA-API-7c54a64dc9564376abcd5016083300f3" target="_blank" style="color: #3232ea"><b>MSA 환경에서 API 요청 기록</b></a>을 각각의 서버에서 남기는 <b>boiler plate 코드</b>가 많은 이슈가 있었고, 해당 기록을 담당하는 Filter에서 RequestBody를 읽기 위해 특정 클래스를 구현하게 되면 불필요한 코드가 보여 가시성이 떨어지는 이슈가 있었고, 이를 하나의 GateWay에서 제공하는 <b>ModifyRequestBodyGatewayFilterFactory</b>를 통해 간단하게 구현했고, <b>로깅에 대한 의존성</b>을 떨어뜨리기 위해 <b>Queue 서버</b>를 중간에 두어 <b>확실한 도메인 경계</b>를 나누는데 기여
+                - RestDocs + Swagger UI를 통해 MSA 환경에서 API 명세를 한 곳에서 관리할 수 있는 <a href="https://shard-othnielia-ba2.notion.site/MSA-API-7c54a64dc9564376abcd5016083300f3" target="_blank" style="color: #3232ea"><b>자동화 문서관리 프로세스</b></a>를 구축하여 구성원 간의 효과적인 소통에 기여
+                - Spring Test가 진행되면서 Context를 반복해서 띄우게 됨으로 <a href="https://shard-othnielia-ba2.notion.site/Test-d4db6150d21b4171bf945ea612078e8c" target="_blank" style="color: #3232ea"><b>빌드 시간이 오래 걸리는 이슈</b></a>가 있었고, 원인이었던 <b>@WebMvcTest를 하나의 추상 클래스</b>로 만들어 확장하게 했고, 무분별한 @MockBean / @SpyBean 사용으로 인해 빈 재생성이 생기는 문제를 <b>테스트 관심사 분리</b>를 통해 @Bean을 사용하는 테스트 클래스를 최소화하여 <b>전체 빌드 시간을 30초 감소</b>하는데 기여
 
               &nbsp; <i><b>Web3j와 Solidity를 활용한 Smart Contract 서버 개발</b></i>
                 - 비즈니스 서비스 로직 요청과 블록체인 트랜잭션이 등록되기까지 1초 남짓 <b>시간적 괴리 이슈</b>가 있었고, 이를 <b>반복 횟수 패턴</b>을 통해 응답을 받을 수 있도록 했으며,
                   실패 혹은 반복 횟수를 넘어서는 요청에 대해서는 <b>실패 로그</b>를 남기고 전체 <b>트랜잭션 전파 범위를 롤백</b>할 수 있도록하는 방향으로 이슈 처리
-                - 컴파일 상에서는 발생하지 않고 배포 시에 <b>Transaction Fail</b>이 일어나는 Struct 타입에 대한 <b>Byte Code 단위의 분석</b>과 타입에 대한 <b> UseCase 작성</b>을 통해 팀원들의 개발 시간을 단축하고 프로젝트 조기 완료에 기여
+                - 컴파일 상에서는 발생하지 않고 배포 시에 <a href="https://shard-othnielia-ba2.notion.site/Web3j-472f1438a8a14a56b836c75ed1878cc7" target="_blank" style="color: #3232ea"><b>Transaction Fail이 일어나는 Struct 타입에 대한 이슈</b></a>를 <b>Byte Code 단위의 분석</b>과 타입에 대한 <b> UseCase 작성</b>을 통해 팀원들의 개발 시간을 단축하고 프로젝트 조기 완료에 기여
                 - <b>Proxy Contract</b> 설계를 통해 변경이 불가능한 블록체인 구조를 유연하게 사용이 가능하도록 구현하여 확장성 있는 블록체인 구조 구축
 
               &nbsp; 사용 스택

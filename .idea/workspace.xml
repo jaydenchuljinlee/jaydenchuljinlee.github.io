@@ -3,11 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="41fc6447-01b4-4507-9763-901c0d0499d6" name="Changes" comment="이력서 업데이트">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/data.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/education.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/experiences.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/experiences.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="korean" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
