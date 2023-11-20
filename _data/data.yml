@@ -89,7 +89,7 @@ experiences:
               
               &nbsp; <i><b>서비스 안정화를 위한 리팩토링과 문서화</b></i>
                 - <a href="https://shard-othnielia-ba2.notion.site/MSA-API-7c54a64dc9564376abcd5016083300f3" target="_blank" style="color: #3232ea"><b>MSA 환경에서 API 요청 기록</b></a>을 각각의 서버에서 남기는 <b>boiler plate 코드</b>가 많은 이슈가 있었고, 해당 기록을 담당하는 Filter에서 RequestBody를 읽기 위해 특정 클래스를 구현하게 되면 불필요한 코드가 보여 가시성이 떨어지는 이슈가 있었고, 이를 하나의 GateWay에서 제공하는 <b>ModifyRequestBodyGatewayFilterFactory</b>를 통해 간단하게 구현했고, <b>로깅에 대한 의존성</b>을 떨어뜨리기 위해 <b>Queue 서버</b>를 중간에 두어 <b>확실한 도메인 경계</b>를 나누는데 기여
-                - RestDocs + Swagger UI를 통해 MSA 환경에서 API 명세를 한 곳에서 관리할 수 있는 <a href="https://shard-othnielia-ba2.notion.site/MSA-API-7c54a64dc9564376abcd5016083300f3" target="_blank" style="color: #3232ea"><b>자동화 문서관리 프로세스</b></a>를 구축하여 구성원 간의 효과적인 소통에 기여
+                - RestDocs + Swagger UI를 통해 MSA 환경에서 API 명세를 한 곳에서 관리할 수 있는 <a href="https://shard-othnielia-ba2.notion.site/MSA-API-4c77bfbea12f44668059762890685e7c" target="_blank" style="color: #3232ea"><b>자동화 문서관리 프로세스</b></a>를 구축하여 구성원 간의 효과적인 소통에 기여
                 - Spring Test가 진행되면서 Context를 반복해서 띄우게 됨으로 <a href="https://shard-othnielia-ba2.notion.site/Test-d4db6150d21b4171bf945ea612078e8c" target="_blank" style="color: #3232ea"><b>빌드 시간이 오래 걸리는 이슈</b></a>가 있었고, 원인이었던 <b>@WebMvcTest를 하나의 추상 클래스</b>로 만들어 확장하게 했고, 무분별한 @MockBean / @SpyBean 사용으로 인해 빈 재생성이 생기는 문제를 <b>테스트 관심사 분리</b>를 통해 @Bean을 사용하는 테스트 클래스를 최소화하여 <b>전체 빌드 시간을 30초 감소</b>하는데 기여
 
               &nbsp; <i><b>Web3j와 Solidity를 활용한 Smart Contract 서버 개발</b></i>

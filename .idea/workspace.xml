@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41fc6447-01b4-4507-9763-901c0d0499d6" name="Changes" comment="이력서 업데이트">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_data/data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/education.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/education.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/experiences.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/experiences.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700177318935</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="이력서 업데이트">
+      <created>1700523106591</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700523106591</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
